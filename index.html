@@ -24,7 +24,20 @@
               </select>
           </label>
             <div class="table-wrapper">
-            <table class="collapse-table"></table>
+            <table class="collapse-table">
+                <thead>
+                    <tr>
+                        <td class="item-id">ID</td>
+                        <td class="item-parentId">parentID</td>
+                        <td class="item-name">Name</td>
+                        <td class="item-email">Email</td>
+                        <td class="item-balance">Balance</td>
+                        <td class="item-isActive">isActive</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
             </div>
       </section>
   </body>
@@ -34,14 +47,6 @@
 <template class="table-template">
     <table class="collapse-table"></table>
 </template>
-<template class="table-header"><tr>
-    <th class="item-id"></th>
-    <th class="item-parentId"></th>
-    <th class="item-name"></th>
-    <th class="item-email"></th>
-    <th class="item-balance"></th>
-    <th class="item-isActive"></th>
-</tr></template>
 <template class="table-row"><tr>
     <td class="item-id"></td>
     <td class="item-parentId"></td>
