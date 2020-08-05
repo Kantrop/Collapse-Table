@@ -7,7 +7,6 @@ export default class ColapseTable {
     this.root = root;
 
     this.data = this.prepareData(data);
-    console.log(this.data);
 
     this.init();
   }
@@ -51,16 +50,12 @@ export default class ColapseTable {
     await this.items.map((item) => item.destroy());
     this.items = [];
 
-    console.log(e.target);
     const param = e.target.getAttribute("name");
     const value = e.target.value;
-    console.log(param, value, e.target);
     this.filteredData = this.rawData.filter((item) => {
       if (value === "any") return true;
-      console.log("" + item[param], value, "" + item[param] != value);
       return "" + item[param] === value;
     });
-    console.log(this.filteredData);
 
     this.renderItems(this.prepareData(this.filteredData));
   };
