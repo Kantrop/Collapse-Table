@@ -1,6 +1,7 @@
 # Collapse table
 ## Таблица со скрываемыми рядами данных
 
+[GitHub pages](https://kantrop.github.io/Collapse-Table/)
 * Без js библиотек
 * Без css библиотек
 * ES2019 (не работает в Safari, т.к. используются стрелочные ф-ции в классе)
