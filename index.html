@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Collapse Table</title>  
+    <link rel="stylesheet" href="./css/main.css"> 
+    <script type="module" src="./index.js">
+    </script>
+    <style>
+    </style>
+  </head>
+  <body>
+        <section class="header">
+            <h1>Collapse Table</h1>
+            <p>as test case</p>
+            <hr>
+        </section>
+      <section class="content">
+          <label>
+              Показывать: 
+              <select name="isActive" class="table-filter">
+                  <option value="any">Все</option>
+                  <option value="true">Активные</option>
+                  <option value="false">Не активные</option>
+              </select>
+          </label>
+            <div class="table-wrapper">
+            <table class="collapse-table"></table>
+            </div>
+      </section>
+  </body>
+
+
+
+<template class="table-template">
+    <table class="collapse-table"></table>
+</template>
+<template class="table-header"><tr>
+    <th class="item-id"></th>
+    <th class="item-parentId"></th>
+    <th class="item-name"></th>
+    <th class="item-email"></th>
+    <th class="item-balance"></th>
+    <th class="item-isActive"></th>
+</tr></template>
+<template class="table-row"><tr>
+    <td class="item-id"></td>
+    <td class="item-parentId"></td>
+    <td class="item-name"></td>
+    <td class="item-email"></td>
+    <td class="item-balance"></td>
+    <td class="item-isActive"></td>
+</tr></template>
+</html>

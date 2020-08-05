@@ -1,0 +1,73 @@
+html,
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.child {
+  visibility: collapse;
+}
+.child.visible {
+  visibility: visible;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid #e2e2e2;
+  position: relative;
+  padding: 2px 6px;
+}
+.parent td:first-child:before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 6px;
+  border-color: transparent transparent transparent #c1d6d9;
+
+  top: 5px;
+  left: -12px;
+}
+.parent.open td:first-child:before {
+  transform: rotate(90deg);
+  left: -13px;
+}
+.child.visible {
+  background: #f2faff;
+}
+.parent.open {
+  background: #d5e7f2;
+}
+.parent.open + .child {
+  box-shadow: inset 0px 10px 9px -9px rgb(12 29 92 / 40%);
+}
+.table-wrapper {
+  padding: 2.5rem;
+  box-shadow: 0px 5px 9px 0px rgb(7 19 62 / 20%);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.content {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.header {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.table-filter {
+  padding: 3px 5px;
+}
+label select {
+  margin-left: 0.5rem;
+}
